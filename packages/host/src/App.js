@@ -1,6 +1,5 @@
 import "./index.css";
 import { header } from "header/Header";
-
 const app = document.getElementById("app");
 
 const content = document.createElement("div");
