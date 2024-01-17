@@ -38,5 +38,6 @@ export class Menu extends LitElement {
     `;
   }
 }
-
-window.customElements.define("menu-global", Menu);
+if (!customElements.get("menu-global")) {
+  window.customElements.define("menu-global", Menu);
+}

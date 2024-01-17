@@ -44,9 +44,14 @@ module.exports = (_, argv) => ({
       name: "footer",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {
+        "./Footer": "./src/Footer",
+      },
       shared: {
-        ...deps,
+        moment: {
+          singleton: false,
+          requiredVersion: deps.moment,
+        },
       },
     }),
     new HtmlWebPackPlugin({
