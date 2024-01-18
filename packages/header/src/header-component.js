@@ -27,5 +27,6 @@ export class HeaderComponent extends LitElement {
     `;
   }
 }
-
-window.customElements.define("header-component", HeaderComponent);
+if (!window.customElements.get("header-component")) {
+  window.customElements.define("header-component", HeaderComponent);
+}
