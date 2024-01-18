@@ -1,7 +1,5 @@
 import "./index.css";
-// import { Menu } from "../../web-components/menu";
-import { HeaderComponent } from "./header-component";
-import * as moment from "moment";
+import "./header-component";
 
 export const header = () => {
   const app = document.getElementById("app");

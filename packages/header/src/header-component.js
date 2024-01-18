@@ -1,5 +1,5 @@
 import { LitElement, css, html } from "lit";
-import { Menu } from "../../web-components/menu";
+import "../../web-components/menu";
 import * as moment from "moment";
 
 export class HeaderComponent extends LitElement {
