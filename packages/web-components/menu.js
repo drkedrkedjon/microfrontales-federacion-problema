@@ -6,7 +6,6 @@ export class Menu extends LitElement {
     this.color = "black";
     this.vertical = false;
   }
-  
 
   static properties = {
     color: { type: String },
